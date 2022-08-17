@@ -4,13 +4,18 @@
     <div class="row">
 
       <div class="col-4">
-        <label class="form-label" for="footage">Footage</label>
-        <input class="form-control" type="number" minlength="3" id="footage" name="footage" v-model="editable.footage">
+        <label class="form-label" for="year">Year</label>
+        <input class="form-control" type="number" minlength="3" id="year" name="year" v-model="editable.year">
       </div>
 
       <div class="col-4">
-        <label class="form-label" for="rooms">Rooms</label>
-        <input class="form-control" type="number" id="rooms" name="rooms" v-model="editable.rooms">
+        <label class="form-label" for="levels">Levels</label>
+        <input class="form-control" type="number" minlength="3" id="levels" name="levels" v-model="editable.levels">
+      </div>
+
+      <div class="col-4">
+        <label class="form-label" for="rooms">Bedrooms</label>
+        <input class="form-control" type="number" id="bedrooms" name="bedrooms" v-model="editable.bedrooms">
       </div>
 
       <div class="col-4">
@@ -21,8 +26,8 @@
       <label class="form-label" for="price">Price</label>
       <input class="form-control" type="number" min="1000" id="price" name="price" v-model="editable.price">
 
-      <label class="form-label" for="img">Image</label>
-      <input class="form-control" type="text" id="img" name="img" v-model="editable.img">
+      <label class="form-label" for="imgUrlUrl">Image</label>
+      <input class="form-control" type="text" id="imgUrl" name="imgUrl" v-model="editable.imgUrl">
 
       <button type="submit" class="btn btn-primary w-100 p-2 mt-3 text-light" data-bs-dismiss="modal">Submit</button>
     </div>

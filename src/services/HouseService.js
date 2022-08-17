@@ -17,12 +17,12 @@ class HouseService{
     AppState.houses = res.data.map (h => new House(h))
   }
 
-   async createHouse(newHouseData){
+  async createHouse(newHouseData){
       console.log('creating a house in the service', newHouseData);
 
       let res = await server.post ('api/houses', newHouseData)
       let house = new House(res.data)
-      AppState.houses = [...AppState.houses, new House(newHouseData)]
+      AppState.houses = [...AppState.houses, house]
       
       console.log('current houses', AppState.houses);
     }
