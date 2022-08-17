@@ -26,14 +26,14 @@
             Cars
           </router-link>
         </li>
-        <!-- <li>
+        <li>
           <router-link
-            :to="{ name: 'Jobs' }"
+            :to="{ name: 'Houses' }"
             class="btn text-success lighten-30 selectable text-uppercase"
           >
-            Jobs
+            Houses
           </router-link>
-        </li> -->
+        </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
       <Login />
